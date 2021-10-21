@@ -1,5 +1,4 @@
-﻿using Code.Patterns.ObjectPool;
-using UnityEngine;
+﻿using UnityEngine;
 
 namespace Asteroids
 {

@@ -6,16 +6,19 @@ namespace Asteroids
     internal sealed class RotationShip : IRotation
     {
         private readonly Transform _transform;
+        private Rigidbody2D _rigidbody;
+        public float TurnSpeed { get; protected set; }
         
-        public RotationShip(Transform transform)
+        public RotationShip(Rigidbody2D rigidbody2D, float turnSpeed)
         {
-            _transform = transform;
+            _rigidbody = rigidbody2D;
+            TurnSpeed = turnSpeed;
         }
         
-        public void Rotation(Vector3 direction)
+        public void Rotation(float turnDirection)
         {
-            var angle = Mathf.Atan2(direction.y, direction.x) * Mathf.Rad2Deg;
-            _transform.transform.rotation = Quaternion.AngleAxis(angle, Vector3.forward);
+            var speed= TurnSpeed;
+            _rigidbody.AddTorque(-turnDirection * speed);
         }
     }
 }

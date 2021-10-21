@@ -6,7 +6,7 @@ using UnityEngine;
 using Object = UnityEngine.Object;
 
 
-namespace Code.Patterns.ObjectPool
+namespace Asteroids
 {
     internal sealed class EnemyPool
     {
@@ -50,7 +50,7 @@ namespace Code.Patterns.ObjectPool
             var enemy = enemies.FirstOrDefault(a => !a.gameObject.activeSelf);
             if (enemy == null)
             {
-                var laser = Resources.Load<Asteroid>("Enemy/Asteroid");
+                var laser = Resources.Load<Asteroid>("Enemy/AsteroidMedium");
                 for (var i = 0; i < _capacityPool; i++)
                 {
                     var instantiate = Object.Instantiate(laser);

@@ -3,23 +3,22 @@
 
 namespace Asteroids
 {
-    internal sealed class Shooting : MonoBehaviour
+    internal sealed class Shooting : MonoBehaviour, IShoot
     {
-        private Rigidbody2D _bullet;
+        private Bullet _bullet;
         private Transform _shootPoint;
         private float _forceBullet;
 
-        public Shooting (Rigidbody2D bullet, Transform shootPoint, float forceBullet)
+        public Shooting (Bullet bullet, Transform shootPoint)
         {
             _bullet = bullet;
             _shootPoint = shootPoint;
-            _forceBullet = forceBullet;
         }
 
         public void Shoot()
         {
-            var temAmmunition = Instantiate(_bullet, _shootPoint.position, _shootPoint.rotation);
-            temAmmunition.AddForce(_shootPoint.up * _forceBullet);
+            Bullet bullet = Instantiate(_bullet, _shootPoint.position, _shootPoint.rotation);
+            bullet.Shoot(_shootPoint.up);
         }
     }
 }

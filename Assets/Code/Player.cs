@@ -1,16 +1,24 @@
-﻿using Code.Patterns.Interfaces;
+﻿using System;
+using Code.Patterns.Interfaces;
 using UnityEngine;
+
 
 namespace Asteroids
 {
+    [RequireComponent(typeof(Rigidbody2D))]
     internal sealed class Player : MonoBehaviour
     {
-        [SerializeField] private float _speed;
+        private Rigidbody2D _rigidbody;
+        private float _thrustDirection;
+        private float _turnDirection;
+        [SerializeField] private float _thrustSpeed = 2;
+        [SerializeField] private float _turnSpeed = 2;
         [SerializeField] private float _acceleration;
-        [SerializeField] private float _forceBullet;
         [SerializeField] private float _hp;
-        [SerializeField] private Rigidbody2D _bullet;
+
+        [SerializeField] private Bullet _bullet;
         [SerializeField] private Transform _shootPoint;
+        
         private bool _isAlive;
         private IMove _moveTransform;
         private IRotation _rotation;
@@ -20,38 +28,42 @@ namespace Asteroids
         private Ship _ship;
 
 
+        private void Awake()
+        {
+            _rigidbody = GetComponent<Rigidbody2D>();
+        }
+
         private void Start()
         {
             _camera = Camera.main;
-            _moveTransform = new AccelerationMove(transform, _speed, _acceleration);
-            _rotation = new RotationShip(transform);
-            _ship = new Ship(_moveTransform, _rotation);
-            _shooting = new Shooting(_bullet, _shootPoint, _forceBullet);
+            _moveTransform = new AccelerationMove(transform, _rigidbody, _thrustSpeed, _acceleration);
+            _rotation = new RotationShip(_rigidbody, _turnSpeed);
+            _shooting = new Shooting(_bullet, _shootPoint);
+            _ship = new Ship(_moveTransform, _rotation, _shooting);
             _damage = new Damage(_hp);
         }
 
         private void Update()
         {
-            var direction = Input.mousePosition - _camera.WorldToScreenPoint(transform.position);
-            _ship.Rotation(direction);
-
-            _ship.Move(Input.GetAxis("Horizontal"), Input.GetAxis("Vertical"), Time.deltaTime);
+            GetAxis();
 
             if (Input.GetKeyDown(KeyCode.LeftShift))
-            {
-                _ship.AddAcceleration();
-            }
+                if (_moveTransform is AccelerationMove accelerationMove)
+                    accelerationMove.AddAcceleration();
 
             if (Input.GetKeyUp(KeyCode.LeftShift))
-            {
-                _ship.RemoveAcceleration();
-            }
+                if (_moveTransform is AccelerationMove accelerationMove)
+                    accelerationMove.RemoveAcceleration();
 
-            
             if (Input.GetButtonDown("Fire1"))
-            {
-                _shooting.Shoot();
-            }
+                _ship.Shoot();
+        }
+
+        private void FixedUpdate()
+        {
+            _ship.Move(_thrustDirection);
+            _ship.Rotation(_turnDirection);
+
         }
 
         private void OnCollisionEnter2D(Collision2D other)
@@ -59,9 +71,13 @@ namespace Asteroids
             _isAlive = _damage.TakeDamage();
 
             if (!_isAlive)
-            {
                 Destroy(gameObject);
-            }
+        }
+
+        private void GetAxis()
+        {
+            _thrustDirection = Input.GetAxis("Vertical");
+            _turnDirection = Input.GetAxis("Horizontal");
         }
     }
 }

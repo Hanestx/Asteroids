@@ -17,12 +17,12 @@ namespace Asteroids
 
         private void Start()
         {
-            _moveTransform = new MoveTransform(transform, Speed);
+            //_moveTransform = new MoveTransform(transform, Speed);
             _size = Random.Range(_rangeSizeMin, _rangeSizeMax);
             transform.localScale = new Vector3(_size, _size, _size);
         }
 
-        void Update()
+        /*void Update()
         {
             _moveTransform.Move(0.0f, Vector3.down.y, Time.deltaTime);
 
@@ -30,7 +30,7 @@ namespace Asteroids
             {
                 Destroy(gameObject);
             }
-        }
+        }*/
         
     }
 }
