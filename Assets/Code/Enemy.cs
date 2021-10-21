@@ -34,13 +34,20 @@ namespace Asteroids
         }
 
 
-        public static Asteroid CreateAsteroidEnemy(Health hp)
+        public static Asteroid CreateAsteroidEnemy(Health hp, Vector3 spawnPosition, Quaternion rotation)
         {
-            var enemy = Instantiate(Resources.Load<Asteroid>("Enemy/Asteroid"));
+            var enemy = Instantiate(Resources.Load<Asteroid>("Enemy/Asteroid"), spawnPosition, rotation);
             enemy.Health = hp;
             return enemy;
         }
         
+
+        public static UFO CreateUFOEnemy(Health hp)
+        {
+            var enemy = Instantiate(Resources.Load<UFO>("Enemy/UFO"));
+            enemy.Health = hp;
+            return enemy;
+        }
         public void DependencyInjectHealth(Health hp)
         {
             Health = hp;

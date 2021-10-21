@@ -167,7 +167,7 @@ GameObject:
   m_Component:
   - component: {fileID: 91420492}
   - component: {fileID: 91420493}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: BoundaryRight
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -224,7 +224,7 @@ GameObject:
   m_Component:
   - component: {fileID: 123056479}
   - component: {fileID: 123056480}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: BoundaryLeft
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -271,6 +271,36 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
+--- !u!1 &333620512
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 333620514}
+  m_Layer: 0
+  m_Name: PoolAmmo
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!4 &333620514
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 333620512}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0.7792675, y: 0.06742221, z: -0.12944876}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 6
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &519420028
 GameObject:
   m_ObjectHideFlags: 0
@@ -407,7 +437,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1026340198}
   - component: {fileID: 1026340199}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: BoundaryDown
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -464,7 +494,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1067053921}
   - component: {fileID: 1067053922}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: BoundaryUp
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -516,6 +546,32 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 1639776840225234346, guid: c06ad05a490f4254c8219cddef1e5b5a, type: 3}
   m_PrefabInstance: {fileID: 1639776841166329804}
   m_PrefabAsset: {fileID: 0}
+--- !u!61 &1210583658
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1210583654}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 0.26, y: 0.42}
+    newSize: {x: 0.26, y: 0.42}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 0.26, y: 0.42}
+  m_EdgeRadius: 0
 --- !u!50 &1210583659
 Rigidbody2D:
   serializedVersion: 4
@@ -586,6 +642,53 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1766808183
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1766808185}
+  - component: {fileID: 1766808184}
+  m_Layer: 0
+  m_Name: SpawnerAsteroids
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!114 &1766808184
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1766808183}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1f2774dd6b25fce4f805b6560b37c08f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _spawnRate: 2
+  _spawnAmount: 1
+  _spawnDistance: 15
+  _trajectoryVariance: 15
+--- !u!4 &1766808185
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1766808183}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 2.5683799, y: 0.688165, z: -1.938193}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 5
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1639776841166329804
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -642,6 +745,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 7331595981088546524, guid: 08a00da8925552f419dd1550794e4809, type: 3}
     - target: {fileID: 1639776840225234341, guid: c06ad05a490f4254c8219cddef1e5b5a, type: 3}
+      propertyPath: _ammoPool
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 1639776840225234341, guid: c06ad05a490f4254c8219cddef1e5b5a, type: 3}
       propertyPath: _turnSpeed
       value: 0.1
       objectReference: {fileID: 0}
@@ -661,5 +768,6 @@ PrefabInstance:
       propertyPath: m_LocalPosition.y
       value: 0.161
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 1639776840225234342, guid: c06ad05a490f4254c8219cddef1e5b5a, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: c06ad05a490f4254c8219cddef1e5b5a, type: 3}

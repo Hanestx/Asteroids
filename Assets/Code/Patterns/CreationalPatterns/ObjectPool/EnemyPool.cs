@@ -21,7 +21,7 @@ namespace Asteroids
             _capacityPool = capacityPool;
             if (!_rootPool)
             {
-                _rootPool = new GameObject(NameManager.POOL_AMMUNITION).transform;
+                _rootPool = new GameObject(NameManager.POOL_ENEMY).transform;
             }
         }
 
@@ -31,7 +31,8 @@ namespace Asteroids
             switch (type)
             {
                 case "Asteroid":
-                    result = GetAsteroid(GetListEnemies(type));
+                case "UFO":
+                    result = GetTypeEnemy(GetListEnemies(type), type);
                     break;
                 default:
                     throw new ArgumentOutOfRangeException(nameof(type), type, "Не предусмотрен в программе");
@@ -45,12 +46,12 @@ namespace Asteroids
             return _enemyPool.ContainsKey(type) ? _enemyPool[type] : _enemyPool[type] = new HashSet<Enemy>();
         }
 
-        private Enemy GetAsteroid(HashSet<Enemy> enemies)
+        private Enemy GetTypeEnemy(HashSet<Enemy> enemies, string type)
         {
             var enemy = enemies.FirstOrDefault(a => !a.gameObject.activeSelf);
             if (enemy == null)
             {
-                var laser = Resources.Load<Asteroid>("Enemy/AsteroidMedium");
+                var laser = Resources.Load<Asteroid>($"Enemy/{type}");
                 for (var i = 0; i < _capacityPool; i++)
                 {
                     var instantiate = Object.Instantiate(laser);
@@ -58,7 +59,7 @@ namespace Asteroids
                     enemies.Add(instantiate);
                 }
 
-                GetAsteroid(enemies);
+                GetTypeEnemy(enemies, type);
             }
 
             enemy = enemies.FirstOrDefault(a => !a.gameObject.activeSelf);
