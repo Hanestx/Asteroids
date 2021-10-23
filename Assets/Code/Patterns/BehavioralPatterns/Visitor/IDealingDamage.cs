@@ -1,4 +1,4 @@
-﻿namespace Asteroids.Patterns.BehavioralPatterns.Visitor
+﻿namespace Code.Patterns.BehavioralPatterns.Visitor
 {
     public interface IDealingDamage
     {

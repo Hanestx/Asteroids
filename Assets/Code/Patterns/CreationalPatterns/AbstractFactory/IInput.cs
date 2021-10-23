@@ -1,4 +1,4 @@
-﻿namespace Code.Patterns.AbstractFactory
+﻿namespace Code.Patterns.CreationalPatterns.AbstractFactory
 {
     public interface IInput
     {

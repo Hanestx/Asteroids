@@ -1,7 +1,7 @@
 ﻿using System.Collections.Generic;
 using UnityEngine;
 
-namespace Asteroids
+namespace Code.Patterns.CreationalPatterns.ObjectPool
 {
     internal sealed class ViewServices : IViewServices
     {

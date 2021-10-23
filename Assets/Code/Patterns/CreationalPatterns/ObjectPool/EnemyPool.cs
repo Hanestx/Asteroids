@@ -1,12 +1,12 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
-using Asteroids;
+using Code.Asteroids;
 using UnityEngine;
 using Object = UnityEngine.Object;
 
 
-namespace Asteroids
+namespace Code.Patterns.CreationalPatterns.ObjectPool
 {
     internal sealed class EnemyPool
     {

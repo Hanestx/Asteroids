@@ -1,6 +1,6 @@
 ﻿using UnityEngine;
 
-namespace Code.Patterns.Proxy
+namespace Code.Patterns.StructuralPatterns.Proxy
 {
     public sealed class Weapon : IWeapon
     {

@@ -1,4 +1,4 @@
-﻿namespace Asteroids.Patterns.BehavioralPatterns.TemplateMethod
+﻿namespace Code.Patterns.BehavioralPatterns.TemplateMethod
 {
     public sealed class VK : Site
     {

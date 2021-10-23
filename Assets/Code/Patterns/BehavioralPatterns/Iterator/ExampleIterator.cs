@@ -2,7 +2,7 @@
 using System.Linq;
 using UnityEngine;
 
-namespace Asteroids.Patterns.Iterator
+namespace Code.Patterns.BehavioralPatterns.Iterator
 {
     internal sealed class Example : MonoBehaviour
     {

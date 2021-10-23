@@ -1,6 +1,7 @@
-﻿using UnityEngine;
+﻿using Code.Asteroids;
+using UnityEngine;
 
-namespace Asteroids
+namespace Code.HomeworkNoNeed.BulletBuilder
 {
     internal sealed class ExampleBulletBuilder : MonoBehaviour
     {

@@ -1,7 +1,7 @@
 ﻿using System.Collections.Generic;
 using UnityEngine;
 
-namespace Asteroids.Patterns.Memento
+namespace Code.Patterns.BehavioralPatterns.Memento
 {
     public sealed class TimeBody : MonoBehaviour
     {

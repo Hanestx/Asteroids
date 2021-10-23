@@ -1,6 +1,6 @@
 ﻿using UnityEngine;
 
-namespace Code.Patterns.Prototype
+namespace Code.Patterns.CreationalPatterns.Prototype
 {
     internal sealed class ExamplePrototype : MonoBehaviour
     {

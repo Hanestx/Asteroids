@@ -1,6 +1,6 @@
 ﻿using UnityEngine;
 
-namespace Code.Patterns.Decorator
+namespace Code.Patterns.StructuralPatterns.Decorator
 {
     internal sealed class Example : MonoBehaviour
     {

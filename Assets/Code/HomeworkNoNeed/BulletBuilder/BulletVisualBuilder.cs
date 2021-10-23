@@ -1,6 +1,6 @@
 ﻿using UnityEngine;
 
-namespace Asteroids
+namespace Code.HomeworkNoNeed.BulletBuilder
 {
     internal sealed class BulletVisualBuilder : BulletBuilder
     {

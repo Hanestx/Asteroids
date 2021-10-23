@@ -1,7 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 
-namespace Asteroids.Patterns.Iterator
+namespace Code.Patterns.BehavioralPatterns.Iterator
 {
     internal interface IEnemy
     {

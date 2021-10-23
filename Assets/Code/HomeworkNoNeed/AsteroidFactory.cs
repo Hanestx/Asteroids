@@ -1,7 +1,8 @@
-﻿using UnityEngine;
+﻿using Code.Asteroids;
+using Code.Asteroids.Interfaces;
+using UnityEngine;
 
-
-namespace Asteroids
+namespace Code.HomeworkNoNeed
 {
     internal sealed class AsteroidFactory : IEnemyFactory
     {

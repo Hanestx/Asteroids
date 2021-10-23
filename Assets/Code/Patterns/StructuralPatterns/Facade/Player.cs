@@ -1,4 +1,4 @@
-﻿namespace Code.Patterns.Facade
+﻿namespace Code.Patterns.StructuralPatterns.Facade
 {
     internal sealed class Player
     {

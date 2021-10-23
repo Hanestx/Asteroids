@@ -1,4 +1,4 @@
-﻿namespace Code.Patterns.Decorator
+﻿namespace Code.Patterns.StructuralPatterns.Decorator
 {
     internal abstract class ModificationWeapon : IFire
     {

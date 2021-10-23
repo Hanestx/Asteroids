@@ -1,6 +1,6 @@
 ﻿using UnityEngine;
 
-namespace Code.Patterns.Builder
+namespace Code.Patterns.CreationalPatterns.Builder
 {
     internal sealed class GameObjectPhysicsBuilder : GameObjectBuilder
     {

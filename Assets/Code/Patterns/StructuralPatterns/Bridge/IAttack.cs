@@ -1,4 +1,4 @@
-﻿namespace Code.Patterns.Bridge
+﻿namespace Code.Patterns.StructuralPatterns.Bridge
 {
     public interface IAttack
     {

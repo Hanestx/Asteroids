@@ -1,6 +1,6 @@
 ﻿using UnityEngine;
 
-namespace Asteroids.Patterns.BehavioralPatterns.Visitor
+namespace Code.Patterns.BehavioralPatterns.Visitor
 {
     public readonly struct InfoCollision
     {

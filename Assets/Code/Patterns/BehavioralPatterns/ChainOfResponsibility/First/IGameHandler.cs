@@ -1,4 +1,4 @@
-﻿namespace Code.Patterns.ChainOfResponsibility.First
+﻿namespace Code.Patterns.BehavioralPatterns.ChainOfResponsibility.First
 {
     public interface IGameHandler
     {

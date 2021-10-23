@@ -1,4 +1,4 @@
-﻿namespace Code.Patterns.ServiceLocator
+﻿namespace Code.Patterns.CreationalPatterns.ServiceLocator
 {
     public interface IService
     {

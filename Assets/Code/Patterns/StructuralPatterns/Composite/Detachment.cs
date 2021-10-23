@@ -1,6 +1,6 @@
 ﻿using System.Collections.Generic;
 
-namespace Code.Patterns.Composite
+namespace Code.Patterns.StructuralPatterns.Composite
 {
     internal sealed class Detachment : IAttack
     {

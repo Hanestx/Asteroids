@@ -1,6 +1,6 @@
 ﻿using UnityEngine;
 
-namespace Code.Patterns.Command.First
+namespace Code.Patterns.BehavioralPatterns.Command.First
 {
     internal sealed class MoveRight : ICommand
     {

@@ -1,6 +1,6 @@
 ﻿using UnityEngine;
 
-namespace Code.Patterns.ChainOfResponsibility.First
+namespace Code.Patterns.BehavioralPatterns.ChainOfResponsibility.First
 {
     public abstract class GameHandler : MonoBehaviour, IGameHandler
     {

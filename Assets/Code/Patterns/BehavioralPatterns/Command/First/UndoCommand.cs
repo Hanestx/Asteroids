@@ -1,7 +1,7 @@
 ﻿using System.Collections.Generic;
 using UnityEngine;
 
-namespace Code.Patterns.Command.First
+namespace Code.Patterns.BehavioralPatterns.Command.First
 {
     internal sealed class UndoCommand : ICommand
     {

@@ -1,6 +1,6 @@
 ﻿using UnityEngine;
 
-namespace Asteroids.Patterns.BehavioralPatterns.TemplateMethod
+namespace Code.Patterns.BehavioralPatterns.TemplateMethod
 {
     public sealed class TemplateMethodTest : MonoBehaviour
     {

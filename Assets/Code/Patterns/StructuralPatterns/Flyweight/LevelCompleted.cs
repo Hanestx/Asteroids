@@ -1,7 +1,7 @@
 ﻿using System.Collections.Generic;
 using UnityEngine;
 
-namespace Code.Patterns.Flyweight
+namespace Code.Patterns.StructuralPatterns.Flyweight
 {
     internal sealed class LevelCompleted
     {

@@ -1,4 +1,4 @@
-﻿namespace Asteroids.Patterns.BehaviorPatterns.State
+﻿namespace Code.Patterns.BehavioralPatterns.State
 {
     public abstract class State
     {

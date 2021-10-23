@@ -1,6 +1,6 @@
 ﻿using UnityEngine;
 
-namespace Asteroids.Patterns.BehaviorPatterns.Strategy
+namespace Code.Patterns.BehavioralPatterns.Strategy
 {
     [CreateAssetMenu(fileName = "Rotate", menuName = "Data/Behaviour/Rotate", order = 0)]
     public sealed class RotateBehaviour : BaseBehaviour

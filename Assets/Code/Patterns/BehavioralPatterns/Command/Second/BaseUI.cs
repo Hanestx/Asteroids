@@ -1,6 +1,6 @@
 ﻿using UnityEngine;
 
-namespace Code.Patterns.Command.Second
+namespace Code.Patterns.BehavioralPatterns.Command.Second
 {
     internal abstract class BaseUI : MonoBehaviour
     {

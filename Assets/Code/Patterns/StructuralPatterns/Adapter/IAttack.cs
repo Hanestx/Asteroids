@@ -1,6 +1,6 @@
 ﻿using UnityEngine;
 
-namespace Code.Patterns.Adapter
+namespace Code.Patterns.StructuralPatterns.Adapter
 {
     public interface IAttack
     {

@@ -1,6 +1,6 @@
 ﻿using UnityEngine;
 
-namespace Asteroids.Patterns.BehaviorPatterns.Strategy
+namespace Code.Patterns.BehavioralPatterns.Strategy
 {
     [CreateAssetMenu(fileName = "Move", menuName = "Data/Behaviour/Move", order = 1)]
     public sealed class MoveBehaviour : BaseBehaviour

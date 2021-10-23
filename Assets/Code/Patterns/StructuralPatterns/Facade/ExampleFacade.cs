@@ -1,6 +1,6 @@
 ﻿using UnityEngine;
 
-namespace Code.Patterns.Facade
+namespace Code.Patterns.StructuralPatterns.Facade
 {
     internal sealed class Example : MonoBehaviour
     {

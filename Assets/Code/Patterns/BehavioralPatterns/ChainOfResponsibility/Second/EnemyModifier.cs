@@ -1,4 +1,4 @@
-﻿namespace Code.Patterns.ChainOfResponsibility.Second
+﻿namespace Code.Patterns.BehavioralPatterns.ChainOfResponsibility.Second
 {
     internal class EnemyModifier
     {

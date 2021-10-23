@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace Asteroids.Patterns.Observer
+namespace Code.Patterns.BehavioralPatterns.Observer
 {
     public interface IHit
     {

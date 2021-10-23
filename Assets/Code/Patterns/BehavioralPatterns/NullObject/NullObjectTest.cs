@@ -1,7 +1,7 @@
 ﻿using System;
 using UnityEngine;
 
-namespace Asteroids.Patterns.NullObject
+namespace Code.Patterns.BehavioralPatterns.NullObject
 {
     internal sealed class NullObjectTest : MonoBehaviour
     {

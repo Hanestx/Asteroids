@@ -1,4 +1,4 @@
-﻿namespace Code.Patterns.Composite
+﻿namespace Code.Patterns.StructuralPatterns.Composite
 {
     public interface IAttack
     {

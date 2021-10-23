@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace Asteroids.Patterns.Iterator
+namespace Code.Patterns.BehavioralPatterns.Iterator
 {
     [Flags]
     internal enum Target

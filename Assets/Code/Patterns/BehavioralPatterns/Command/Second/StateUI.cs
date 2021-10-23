@@ -1,4 +1,4 @@
-﻿namespace Code.Patterns.Command.Second
+﻿namespace Code.Patterns.BehavioralPatterns.Command.Second
 {
     internal enum StateUI
     {

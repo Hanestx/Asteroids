@@ -1,6 +1,6 @@
 ﻿using UnityEngine;
 
-namespace Code.Patterns.Proxy
+namespace Code.Patterns.StructuralPatterns.Proxy
 {
     internal sealed class ExampleProxy : MonoBehaviour
     {

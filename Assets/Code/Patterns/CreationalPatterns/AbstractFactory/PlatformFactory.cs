@@ -1,6 +1,6 @@
 ﻿using UnityEngine;
 
-namespace Code.Patterns.AbstractFactory
+namespace Code.Patterns.CreationalPatterns.AbstractFactory
 {
     internal sealed class PlatformFactory
     {

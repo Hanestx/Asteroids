@@ -1,6 +1,6 @@
 ﻿using UnityEngine;
 
-namespace Asteroids.Patterns.Memento
+namespace Code.Patterns.BehavioralPatterns.Memento
 {
     public sealed class PointInTime
     {

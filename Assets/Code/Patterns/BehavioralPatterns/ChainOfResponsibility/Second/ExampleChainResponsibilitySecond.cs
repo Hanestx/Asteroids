@@ -1,6 +1,6 @@
 ﻿using UnityEngine;
 
-namespace Code.Patterns.ChainOfResponsibility.Second
+namespace Code.Patterns.BehavioralPatterns.ChainOfResponsibility.Second
 {
     public class ExampleChainResponsibilitySecond : MonoBehaviour
     {

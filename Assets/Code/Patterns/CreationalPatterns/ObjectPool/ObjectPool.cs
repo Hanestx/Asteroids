@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using Object = UnityEngine.Object;
 
-namespace Asteroids
+namespace Code.Patterns.CreationalPatterns.ObjectPool
 {
     internal sealed class ObjectPool : IDisposable
     {

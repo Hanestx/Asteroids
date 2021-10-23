@@ -1,7 +1,7 @@
 ﻿using UnityEngine;
 using UnityEngine.UI;
 
-namespace Code.Patterns.Command.Second
+namespace Code.Patterns.BehavioralPatterns.Command.Second
 {
     internal sealed class PanelOne : BaseUI
     {

@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace Code.Patterns.Prototype
+namespace Code.Patterns.CreationalPatterns.Prototype
 {
     [Serializable]
     internal sealed class PlayerData

@@ -2,7 +2,7 @@
 using System.Threading;
 using UnityEngine;
 
-namespace Code.Patterns.Singleton
+namespace Code.Patterns.CreationalPatterns.Singleton
 {
     public sealed class Services
     {

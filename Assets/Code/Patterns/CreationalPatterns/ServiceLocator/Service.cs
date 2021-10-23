@@ -1,6 +1,6 @@
 ﻿using UnityEngine;
 
-namespace Code.Patterns.ServiceLocator
+namespace Code.Patterns.CreationalPatterns.ServiceLocator
 {
     internal sealed class Service : IService
     {

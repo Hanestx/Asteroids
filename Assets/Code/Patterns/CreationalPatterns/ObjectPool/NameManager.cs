@@ -1,4 +1,4 @@
-﻿namespace Asteroids
+﻿namespace Code.Patterns.CreationalPatterns.ObjectPool
 {
     internal static class NameManager
     {

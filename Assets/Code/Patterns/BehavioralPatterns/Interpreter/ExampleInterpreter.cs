@@ -2,7 +2,7 @@
 using TMPro;
 using UnityEngine;
 
-namespace Code.Patterns.Interpreter
+namespace Code.Patterns.BehavioralPatterns.Interpreter
 {
     internal sealed class ExampleInterpreter : MonoBehaviour
     {

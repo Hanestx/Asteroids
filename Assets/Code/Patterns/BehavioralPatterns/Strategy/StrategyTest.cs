@@ -1,6 +1,6 @@
 ﻿using UnityEngine;
 
-namespace Asteroids.Patterns.BehaviorPatterns.Strategy
+namespace Code.Patterns.BehavioralPatterns.Strategy
 {
     public sealed class StrategyTest : MonoBehaviour
     { 

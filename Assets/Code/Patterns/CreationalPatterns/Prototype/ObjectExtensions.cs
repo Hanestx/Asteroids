@@ -2,7 +2,7 @@
 using System.IO;
 using System.Runtime.Serialization.Formatters.Binary;
 
-namespace Code.Patterns.Prototype
+namespace Code.Patterns.CreationalPatterns.Prototype
 {
     public static partial class ObjectExtensions
     {

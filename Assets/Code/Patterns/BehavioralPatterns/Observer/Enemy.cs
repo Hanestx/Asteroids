@@ -1,7 +1,7 @@
 ﻿using System;
 using UnityEngine;
 
-namespace Asteroids.Patterns.Observer
+namespace Code.Patterns.BehavioralPatterns.Observer
 {
     public sealed class Enemy : MonoBehaviour, IHit
     {

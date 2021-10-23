@@ -1,4 +1,4 @@
-﻿namespace Asteroids.Patterns.Iterator
+﻿namespace Code.Patterns.BehavioralPatterns.Iterator
 {
     internal sealed class Ability : IAbility
     {

@@ -1,6 +1,6 @@
 ﻿using UnityEngine;
 
-namespace Asteroids
+namespace Code.Patterns.CreationalPatterns.ObjectPool
 {
     internal interface IViewServices
     {
